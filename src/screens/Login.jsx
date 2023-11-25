@@ -82,7 +82,6 @@ export default function Login() {
             backgroundSize: "120%",
           }}
         >
-          <div>hai</div>
           {/* <Image src={Quiz} className="w-[100%]" /> */}
         </div>
         <div className="relative flex items-center justify-center bg-white h-full w-[98vw] md:w-full bg-opacity-90 p-2 overflow-hidden">
