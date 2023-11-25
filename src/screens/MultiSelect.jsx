@@ -12,12 +12,12 @@ export default function MutiSelect(props) {
   const { options, label, selectedItems, onSelectionChange } = props;
   return (
     <Autocomplete
-    size="small"
+      size="small"
       // multiple
       id="checkboxes-tags-demo"
-      options={options?options:[]}
+      options={options ? options : []}
       disableCloseOnSelect
-      value={selectedItems?selectedItems:[]}
+      value={selectedItems ? selectedItems : []}
       onChange={(event, newValue) => onSelectionChange(newValue)}
       getOptionLabel={(option) => option.label}
       disableCloseOnSelect={false}
@@ -35,16 +35,16 @@ export default function MutiSelect(props) {
       style={{ width: "20rem" }}
       renderInput={(params) => (
         <TextField
-        {...params} 
-        placeholder={label} 
-        InputProps={{
-        ...params.InputProps,
-        style: {
-            borderRadius: "0.4rem",
-        },
-        }}
+          {...params}
+          placeholder={label}
+          InputProps={{
+            ...params.InputProps,
+            style: {
+              borderRadius: "0.4rem",
+            },
+          }}
         />
-    )}
+      )}
     />
   );
 }
