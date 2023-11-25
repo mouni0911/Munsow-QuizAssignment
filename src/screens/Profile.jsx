@@ -58,7 +58,7 @@ export default function Profile() {
 
   return (
     <div
-      // style={{ background: "linear-gradient(1deg,#9c27b0 10%,  #7b24d2)" }}
+      style={{ background: "linear-gradient(1deg,#9c27b0 10%,  #7b24d2)" }}
       className="text-lg flex items-center justify-center gap-10 h-full w-full "
     >
       <div
@@ -67,14 +67,14 @@ export default function Profile() {
           background: "rgba(255,255,255,0.5)",
           // transform: "rotateZ(5deg)",
           // background: "linear-gradient(1deg,#9c27b0 10%,  #7b24d2)",
-          backdropfilter: "blur(90px)",
+          // backdropfilter: "blur(90px)",
           border: "2px solid white",
         }}
       >
         <div
           className="flex flex-col items-center justify-center gap-10 m-2 p-4 rounded-lg"
           style={{
-            background: "rgba(255,255,255,0.3)",
+            background: "rgba(255,255,255)",
             backdropFilter: "blur(80px)",
             // transform: "rotateZ(-5deg)",
             border: "2px solid white",
